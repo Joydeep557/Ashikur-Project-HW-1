@@ -1,0 +1,253 @@
+/* Common CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, span {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --third-family: "Potta One", sans-serif;
+    --Primary-color: #353535;
+    --Secondary-color : #FFFFFF;
+    --Tertiarry-color : #FFCC00 ;
+  }
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common CSS End */
+
+
+/* NAVBAR */
+#CustomMenu ul li a {
+
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 15px;
+line-height: 200%;
+color: var(--Primary-color);
+padding: 18px 22px 5px 22px;
+position: relative;
+}
+
+#CustomMenu ul li a::before {
+content: "";
+background-color: var(--Primary-color);
+width: 0;
+height: 1px;
+position: absolute;
+bottom: 0;
+left: 0;
+transition: 0.3s;
+}
+
+#CustomMenu ul li:hover a::before {
+width: 100%;
+}
+
+/* NAVBAR END */
+
+
+/* FOOTER */
+
+footer {
+    background-image: url(../Images/Footer.png);
+}
+footer .middle-content {
+    color: var(--Secondary-color);
+}
+
+footer .middle-content h4 {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+footer .middle-content p {
+    font-size: 16px;
+}
+
+
+footer .end-content a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Secondary-color);
+    padding: 16px 0px 15px 32px;
+    border-radius: 16px;
+    background-color: var(--Tertiarry-color);
+}
+
+footer .end-content a:hover {
+    background-color: var(--Secondary-color);
+    color: #484848;
+    border: 1px solid #000000;
+}
+
+
+footer .end-content i {
+    padding: 5px 33px 5px 11px;
+}
+
+footer .first-row {
+    padding-top: 71px;
+}
+
+footer .icons a i {
+    color: var(--Secondary-color);
+}
+footer .icons a {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    background-color: #484848;
+    transition: 0.5s;
+}
+
+footer .icons a:hover {
+    background-color: var(--Tertiarry-color);
+}
+
+footer .second-row {
+    padding: 94px 0 85px 0;
+}
+
+footer .second-row span {
+    color: #BBB9B9;
+}
+
+footer .second-row a {
+    color: var(--Secondary-color);
+}
+
+footer .second-row .Last-icon span {
+    color: var(--Secondary-color);
+
+}
+
+/* FOOTER END */
+
+
+/* BANNDER */
+
+#banner .contains {
+align-content: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+}
+
+#banner .contains h4 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #353535;
+padding: 119px 0px 15px 0px;
+}
+
+#banner .contains h1 {
+font-family: var(--second-family);
+font-weight: 700;
+font-size: 64px;
+color: #353535;
+padding: 15px 0 25px 0;
+}
+
+#banner .contains p {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 180%;
+color: #353535;
+padding: 0px 0 45px 0;
+}
+
+#banner .btn-contact a {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--Secondary-color);
+    padding: 16px 0px 15px 32px;
+    border-radius: 16px;
+    background-color: var(--Tertiarry-color);
+    transition: 0.3s;
+    margin: 0px 20px 66px 0;
+    display: inline-block;
+}
+
+#banner .btn-contact a:hover {
+    background-color: transparent;
+    color: var(--Primary-color);
+    border: 1px solid #353535;
+}
+
+
+
+#banner .btn-contact a i {
+    padding: 6px 45px 6px 11px; 
+}
+
+#banner .btn-contact .Download {
+    font-size: 20px;
+    font-weight: 500;
+    color: #353535 ;
+    padding: 16px 0px 15px 32px;
+    border-radius: 16px;
+    border: 1px solid #353535;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+
+#banner .btn-contact .Download:hover {
+    background-color: var(--Tertiarry-color);
+    color: var(--Secondary-color);
+    border: none;
+}
+
+
+#banner .img-content {
+    padding-top: 61px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;    
+} 
+
+#banner .followme span {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 22px;
+color: #353535;
+
+}
+
+#banner .followme a i {
+    width: 20px;
+    height: 20px;
+    color: #000000;
+    padding: 0 36px 0px 0;
+    display: inline-block;
+    margin-bottom: 154px;
+
+}
+
+
+
+/* BANNDER END */
